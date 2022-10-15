@@ -13,11 +13,14 @@
 
 <header class="main-header">
   
-  
+     <a href="#">
+        <img class="main-sandvich-mobil" src="svg/icons8-menu.svg" alt="logo sandvich">
+      </a>
+
     <div class="container">
       <div class="main-hat">
-         <a href="#" class="logo-noemi">
-            <img src="svg/noemi-logo.svg" alt="Логотип ноеми">
+        <a href="#" class="logo-noemi">
+            <img src="svg/noemi-logo.svg" alt="logo noemi">
         </a>
         <nav>
           <ul class="main-menu">
@@ -29,15 +32,15 @@
             <li><a href="#" class="menu-item">Контакты</a></li>
           </ul>
         </nav>
-        <a href="#" class="main-sandvich">
-            <img src="svg/" alt="Меню сэндвич">
+        <a href="#">
+            <img class="main-sandvich-tabl" src="svg/icons8-menu.svg" alt="logo sandvich">  
         </a>
       </div>
       
       <div>
-        <h1 class="banner-title">Блог о творчестве, спорте, и образе жизни</h1>
+          <h1 class="banner-title">Блог о творчестве, спорте, и образе жизни</h1>
       </div>
-          
+ 
     </div>
       
 </header>
@@ -48,9 +51,6 @@
 
 <section class="trend-section">
       <div class="trend-hat trhat1">
-        <a href="#">
-          <img class="logo-trend-section" src="" alt="">
-        </a> 
         <nav class="trend-nav">
           <ul class="trend-menu">
             <li class="trend-menu-li"><a href="#" class="trend-menu-item ">Lifestyle</a></li>
@@ -60,9 +60,6 @@
        </nav>
       </div>
      <div class="trend-hat trhat2">
-        <a href="#">
-          <img class="logo-trend-section" src="" alt="">
-        </a> 
         <nav class="trend-nav">
           <ul class="trend-menu">
             <li class="trend-menu-li"><a href="#" class="trend-menu-item ">Food</a></li>
@@ -71,9 +68,6 @@
        </nav>
       </div>
      <div class="trend-hat trhat3">
-        <a href="#">
-          <img class="logo-trend-section" src="" alt="">
-        </a> 
         <nav class="trend-nav">
           <ul class="trend-menu">
             <li class="trend-menu-li"><a href="#" class="trend-menu-item ">Lifestyle</a></li>
@@ -83,9 +77,6 @@
        </nav>
       </div>
      <div class="trend-hat trhat4">
-        <a href="#">
-          <img class="logo-trend-section" src="" alt="">
-        </a> 
         <nav class="trend-nav">
           <ul class="trend-menu">
             <li class="trend-menu-li"><a href="#" class="trend-menu-item ">Food</a></li>
@@ -350,10 +341,19 @@
   <h2 class="product-title">Наши изделия</h2>
 
   <section class="product-section">
+
       <div class="product-hat prdhat1">
         <a href="#">
           <img class="logo-product-section" src="" alt="">
         </a> 
+
+        <picture class="product-pict">
+          <source srcset="img/shop-item-desk1.jpg" media="(min-width: 1201px)">
+          <source srcset="img/shop-item-tablet1.jpg" media="(max-width: 641px) and (min-width: 1200px)">
+          <source srcset="img/shop-item-mobile1.jpg" media="(max-width: 640px)">
+          <img src="img/shop-item-desk1.jpg" alt="Логотип">
+        </picture>
+
         <nav class="product-nav">
           <h3 class="product-item-title">Подушка на диван</h3>
           <p class="product-text">Набор из двух подушек с модными принтами. Видео о создании
@@ -368,12 +368,21 @@
               <button class="product-but">В магазин</button>
             </form>
           </div>
-       </nav>
+        </nav>
       </div>
+
       <div class="product-hat prdhat2">
         <a href="#">
           <img class="logo-product-section" src="" alt="">
         </a> 
+
+        <picture class="product-pict">
+          <source srcset="img/shop-item-desk2.jpg" media="(min-width: 1201px)">
+          <source srcset="img/shop-item-tablet2.jpg" media="(max-width: 641px) and (min-width: 1200px)">
+          <source srcset="img/shop-item-mobile2.jpg" media="(max-width: 640px)">
+          <img src="img/shop-item-desk2.jpg" alt="Логотип">
+        </picture>
+
         <nav class="product-nav">
           <h3 class="product-item-title">Кукла «Зайчик»</h3>
           <p class="product-text">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена
@@ -387,12 +396,21 @@
               <button class="product-but">В магазин</button>
             </form>
           </div>
-       </nav>
+        </nav>
       </div>
+
       <div class="product-hat prdhat3">
         <a href="#">
           <img class="logo-product-section" src="" alt="">
         </a> 
+
+        <picture class="product-pict">
+          <source srcset="img/shop-item-desk3.jpg" media="(min-width: 1201px)">
+          <source srcset="img/shop-item-tablet3.jpg" media="(max-width: 641px) and (min-width: 1200px)">
+          <source srcset="img/shop-item-mobile3.jpg" media="(max-width: 640px)">
+          <img src="img/shop-item-desk3.jpg" alt="Логотип">
+        </picture>
+
         <nav class="product-nav">
           <h3 class="product-item-title">Шестиугольная рамка</h3>
           <p class="product-text">Необычная рамка для украшения дома из видео
@@ -407,9 +425,10 @@
               <button class="product-but">В магазин</button>
             </form>
           </div>          
-       </nav>
+        </nav>
       </div>
-  </section>
+
+  </section>  
 
 
 <footer class="footer">
