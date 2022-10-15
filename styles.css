@@ -63,7 +63,10 @@ li {
     background-image: url("img/banner-bg.jpg");
   }  
   .trend-hat {
-    width: calc((100vw - 3 * 15px) / 4);
+    width: calc((100vw - 3 * 12px) / 4);
+  }
+  .trend-hat:nth-of-type(n + 1):nth-of-type(-n + 3) {
+    margin-right: 6px;
   }
   .main-section {
     width: 800px;
@@ -170,9 +173,16 @@ li {
   .main-header {
     background-image: url("img/banner-bg-tablet.jpg");
   }
-  .trend-hat:nth-of-type(odd) {
+/*  .trend-hat:nth-of-type(odd) {
     margin-left: 10px;
   }
+  .trend-hat:nth-of-type(even) {
+    margin-right: 10px;
+  }*/
+  .trend-hat {
+    margin-left: 6px;
+    margin-right: 0px;
+  }  
   .trend-hat {
     width: calc((100vw - 2 * 15px) / 2);
   }
@@ -486,9 +496,6 @@ li {
   z-index: 1;  
 }
 
-.trend-hat:nth-of-type(n + 1):nth-of-type(-n + 3) {
-  margin-right: 6px;
-}
 
 .trhat1 {
   background-image: url("img/trend1.jpg");
