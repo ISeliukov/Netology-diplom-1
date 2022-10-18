@@ -537,7 +537,7 @@ fieldset {
   margin-bottom: 30px;
 }
 ._hidden {
-  /*display: none;*/
+  display: none;
 }
 
 /*---------------------------  БЛОК   MAIN  ----------------*/
