@@ -25,10 +25,16 @@ li {
   .main-header {
     width:  100vw; /*1660px;*/
   }
-  .main-sandvich-mobil {
+/*  .main-sandvich-mobil {
     display: none;
   }
   .main-sandvich-tabl {
+    display: none;
+  }*/
+  .sandvich-mobil-ref {
+    display: none;
+  }
+  .sandvich-tabl-ref {
     display: none;
   }
   .main-hat {
@@ -75,17 +81,25 @@ li {
     display: flex;
     flex-wrap: wrap;
     width:  1170px;
-    margin-left: calc((100vw - 1170px) / 2); /*calc((1660px - 1170px) / 2);*/
+    /*margin-left: calc((100vw - 1170px) / 2); /*calc((1660px - 1170px) / 2);*/
+    margin-left: auto;
+    margin-right: auto;
   }
   .section-hat {
     display: flex;
   }
+  .section-nav {
+    margin-left: 20px;
+  }  
   .aside {
     margin-left: 30px;
     width: 290px;
   }
   .search-inp {
     width: 210px;
+  }
+  .search-but {
+    width: 50px;
   }
   .post-form {
     width: 290px;
@@ -95,30 +109,57 @@ li {
   }
   .product-section {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    margin-left: calc((100vw  - 1170px) / 2);
+    /*margin-left: calc((100vw  - 1170px) / 2);*/
+    margin-left: auto;
+    margin-right: auto;
     width: 1170px;
   }
   .product-hat {
     display: flex;
     flex-direction: column;
     margin-left: 0px;
-    width: 300px;
-    height:  200px;
+    width: 33.3% /*300px;*/
+    /*height:  200px;*/
   }
   .product-hat:nth-of-type(n + 1):nth-of-type(-n + 2) {
-    margin-right: 110px;
+    /*margin-right: 110px;*/
   }
   .product-pict {
-    margin-left: 7%;
+    /*margin-left: 7%;*/
   }
+  .prdpict1 {
+    margin-left: 7%;
+    text-align: left;
+  }
+  .prdpict2 {
+    /*margin-left: 7%;*/
+    text-align: center;
+  }
+ .prdpict3 {
+    margin-right: 7%;
+    text-align: right;
+  }  
   .product-nav {
     margin-top: -10%;
   }
+  .prdnav1 {
+    margin-right: auto;
+  }
+  .prdnav2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .prdnav3 {
+    margin-left: auto;
+  }  
   .footer {
     width: 1170px;
-    margin-left: calc((100vw  - 1170px) / 2);
-    margin-top: 350px;
+    /*margin-left: calc((100vw  - 1170px) / 2);*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
   }
 }
 
@@ -136,12 +177,16 @@ li {
   .main-menu {
     display: none;
   }
-  .main-sandvich-mobil {
+/*  .main-sandvich-mobil {
+    display: none;
+  }*/
+  .sandvich-mobil-ref {
     display: none;
   }
   .main-sandvich-tabl {
     margin-top: 20px;
     margin-right: 50px;
+    width: 30px;
     position: relative;
     z-index: 4;
   }
@@ -187,7 +232,8 @@ li {
     width: calc((100vw - 2 * 15px) / 2);
   }
   .main-section {
-    width: 400px /*430px;*/
+    /*width: 400px /*430px;*/
+    padding-right: 10%;
   }
   .section-hat {
     display: block;
@@ -198,8 +244,12 @@ li {
   .container-wraper {
     display: flex;
     /*flex-wrap: wrap;*/
-    width:  740px;
-    margin-left: calc((100vw - 740px) / 2);
+    /*width:  740px;*/
+    /*margin-left: calc((100vw - 740px) / 2);*/
+    /*margin-left: auto;*/
+    margin-right: auto;
+    padding-left: 10%;
+    padding-right: 10%;
   }
   .aside {
     margin-left: 0px;
@@ -207,6 +257,9 @@ li {
   }
   .search-inp {
     width: 210px;
+  }
+  .search-but {
+    width: 50px;
   }
   .post-form {
     width: 290px;
@@ -217,32 +270,59 @@ li {
   .product-section {
     display: flex;
     flex-wrap: wrap;
-    margin-left: calc((100vw - 768px) / 2);
+    /*margin-left: calc((100vw - 768px) / 2);*/
+    margin-left: auto;
+    margin-right: auto;
     width: 768px;
   }
   .product-hat {
     display: flex;
     flex-direction: column;
     /*margin-left: 15px;*/
-    width: 300px;
-    height:  200px;
+    width: 50%; /*300px;*/
+    /*height:  200px;*/
   }
-  .product-hat:nth-of-type(1) {
+/*  .product-hat:nth-of-type(1) {
     margin-right: 110px;
-  }
+  } */
   .product-hat:nth-of-type(3) {
-    margin-top: 270px;
+    margin-top: 30px;
   }
   .product-nav {
     margin-top: -10%;
   }
-  .product-pict {
-    margin-left: 7%;
+  .prdnav1 {
+    margin-right: auto;
   }
+  .prdnav2 {
+    margin-left: auto;
+  }
+  .prdnav3 {
+    margin-right: auto;
+  }  
+
+  .product-pict {
+    /*margin-left: 7%;
+    text-align: center; */
+  }
+.prdpict1 {
+    margin-left: 7%;
+    text-align: left;
+  }
+  .prdpict2 {
+    margin-right: 7%;
+    text-align: right;
+  }
+ .prdpict3 {
+    margin-left: 7%;
+    text-align: left;
+  }    
   .footer {
     width: 768px;
-    margin-left: calc((100vw - 768px) / 2);
-    margin-top: 340px;
+    /*margin-left: calc((100vw - 768px) / 2);*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
   }
 }
 
@@ -274,14 +354,15 @@ li {
     display: none;
   }
   .main-sandvich-mobil {
+    width: 30px;
     margin-top: 50px;
-    margin-left: calc(100vw - 50px - 50px);
+    margin-left: calc(100vw - 50px - 0px);
     position: relative;
     z-index: 4;
   }
-  .main-sandvich-tabl {
+  .sandvich-tabl-ref {
     display: none;
-  }  
+  }
   .banner-title {
     box-sizing: border-box;
     text-align: center;
@@ -327,18 +408,29 @@ li {
     display: flex;
     flex-wrap: wrap;
     width:  90vw; /*740px;*/
-    margin-left: 5vw; /*calc((100vw - 740px) / 2);*/
+    /*margin-left: 5vw; /*calc((100vw - 740px) / 2);*/
+    margin-left: auto;
+    margin-right: auto;
   }
   .aside {
     margin-left: auto;
     margin-right: auto;
     width: 100vw;
   }
+  .contacts {
+    margin-right: 5%;
+  }
+  .search-label {
+    width: calc(100% - 50px);
+  }
   .search-inp {
-    width: calc(100vw - 50px - 15px - 15px);
+    width: 100%;
+  }
+  .search-but {
+    width: 50px;
   }
   .post-form {
-    width: 100vw;
+    width: 100%;
   }
   .product-title {
     width: 100vw; /*768px;*/
@@ -350,10 +442,12 @@ li {
     width: 100vw /*768px;*/
   }
   .product-hat {
-    margin-left: auto;
-    margin-right: auto;
-    /*width: 300px;
-    height:  200px;*/
+    display: flex;
+    flex-direction: column;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    width: 100%;
+    /*height:  200px;*/
     /*min-height: 200px;*/
   }
   .product-hat:nth-of-type(n + 2):nth-of-type(-n + 3) {
@@ -373,13 +467,18 @@ li {
   }*/
   .product-nav {
     margin-top: -7%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .product-pict {
-    margin-left: 60px;
+    /*margin-left: 60px;*/
+    text-align: center;
   }
   .footer {
     width: 90vw; /*768px;*/
-    margin-left: 5vw;
+    /*margin-left: 5vw;*/
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 50px;
   }
 }
@@ -566,7 +665,7 @@ fieldset {
   z-index: 3;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
+/*  margin-top: 20px;*/
 }
 
 .logo-noemi {
@@ -767,7 +866,6 @@ fieldset {
 
 .section-nav {
   display: block;
-  margin-left: 20px;
 }
 
 .section-menu {
@@ -954,7 +1052,7 @@ fieldset {
 }
 
 .search-but {
-    width: 50px;
+    /*width: 50px;*/
     background: rgb(181,159,91) url("svg/search.svg") center center/ 20px no-repeat;
     display: inline-block;
     border: 0;
@@ -1152,24 +1250,22 @@ fieldset {
   display: block;
   position: relative;
   box-sizing: border-box;
-  width: 345px;
+  /*width: 345px;*/
+  width: 90%;
   min-height:  255px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0px;
-  /*padding: 7% 5%; */
+  /*margin-bottom: 0px;*/
   z-index: 3;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
   border: 2px solid rgb(181,159,91);
 }
 
 .product-item-title {
-  margin-top: 35px;
+  /*margin-top: 35px;
   margin-bottom: 0px;
-  margin-left: 20px;
+  margin-left: 20px;*/
   font-size: 20px;
   font-weight: 700;
   font-family: Open Sans;
@@ -1177,12 +1273,12 @@ fieldset {
 }
 
 .product-text {
-  margin-top: 5px;
+  /*margin-top: 5px;
   margin-bottom: 0px;
   margin-left: 20px;
-  margin-right: 20px;
+  margin-right: 20px;*/
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 400;
   font-family: Open Sans;
 }
 
@@ -1207,9 +1303,9 @@ fieldset {
 .product-price {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
+  /*margin-top: 30px;
   margin-left: 20px;
-  margin-right: 20px;
+  margin-right: 20px;*/
 }
 
 .product-wrapper {
@@ -1229,18 +1325,21 @@ fieldset {
   font-family: Open Sans;
 }
 
+.product-form {
+  display:  flex;
+  width: 140px;
+  height: 45px;
+  background-color: rgb(181,159,91);
+  text-decoration: none;
+}
 .product-but {
-    box-sizing: border-box;
-    background-color: rgb(181,159,91);
+    margin: auto;
     border: 0;
-    height: 45px;
     font-family: Open Sans;
     font-weight: 700;
     font-size: 14px;
     text-transform: uppercase;
     color: #fff;
-    width: 140px;
-    margin-top: 0px;
     cursor: pointer;
 }
 
